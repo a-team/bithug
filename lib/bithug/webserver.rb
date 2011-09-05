@@ -23,7 +23,8 @@ module Bithug
       end
 
       def current_user?
-        user == current_user
+        # user == current_user
+        current_user
       end
 
       def toggle_follow
