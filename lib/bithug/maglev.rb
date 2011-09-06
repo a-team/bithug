@@ -4,6 +4,8 @@ require 'maglev/rchash'
 unless defined? Bithug::Model
   Bithug.maglev_persistable
   DateTime.maglev_persistable
+  Date.maglev_persistable
+  Rational.maglev_persistable
   
   class Bithug::Model
     maglev_persistable
