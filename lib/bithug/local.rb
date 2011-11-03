@@ -1,5 +1,4 @@
 require 'bithug'
-require 'bcrypt'
 require 'yaml'
 
 module Bithug::Local

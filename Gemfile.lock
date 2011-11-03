@@ -1,6 +1,15 @@
 GIT
+  remote: https://github.com/MagLev/webtools.git
+  revision: 1fb2df634cd22a00cfb9c93798c861d3acafc7a1
+  specs:
+    maglev-webtools (0.2.1)
+      json_pure (~> 1.5)
+      rack (~> 1.1)
+      rack-contrib (~> 1.1)
+
+GIT
   remote: https://github.com/rkh/big_band.git
-  revision: 3138cde4ea3fa52c307d8aee4b5b6a4ab943a3a7
+  revision: 1a4e50d8dea5fe94828dfa145484a67be59325a7
   specs:
     big_band (0.5.0)
       async-rack (~> 0.5.0)
@@ -27,18 +36,15 @@ GIT
       backports
 
 GEM
-  remote: http://w2-stdev-ub10-01.gemstone.com:9292/
   remote: http://rubygems.org/
   specs:
     async-rack (0.5.1)
       rack (~> 1.1)
     backports (2.3.0)
-    bcrypt-ruby (3.0.0)
-    bcrypt-ruby (3.0.0-java)
-    bouncy-castle-java (1.5.0146.1)
+    bcrypt-ruby (3.0.1)
     chronic_duration (0.9.6)
       numerizer (~> 0.1.1)
-    chunky_png (1.2.1)
+    chunky_png (1.2.5)
     compass (0.11.5)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -46,42 +52,34 @@ GEM
     diff-lcs (1.1.3)
     extlib (0.9.15)
     fssm (0.2.7)
-    haml (3.1.2)
+    haml (3.1.3)
     haml-more (0.5.1)
       haml (>= 2.2.20)
       monkey-lib (~> 0.5.2)
-    jruby-openssl (0.7.4)
-      bouncy-castle-java
-    json (1.5.4)
-    json (1.5.4-java)
-    json_pure (1.5.4)
-      spruz (~> 0.2.8)
-    maglev-webtools (0.2.1)
-      json (~> 1.5)
-      rack (~> 1.1)
-      rack-contrib (~> 1.1)
-    mime-types (1.16)
+    json (1.6.1)
+    json_pure (1.6.1)
+    mime-types (1.17.2)
     net-ssh (2.2.1)
     numerizer (0.1.1)
     oauth (0.4.5)
-    rack (1.3.2)
+    rack (1.3.5)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-flash (0.1.2)
       rack
-    rspec (2.6.0)
-      rspec-core (~> 2.6.0)
-      rspec-expectations (~> 2.6.0)
-      rspec-mocks (~> 2.6.0)
-    rspec-core (2.6.4)
-    rspec-expectations (2.6.0)
+    rspec (2.7.0)
+      rspec-core (~> 2.7.0)
+      rspec-expectations (~> 2.7.0)
+      rspec-mocks (~> 2.7.0)
+    rspec-core (2.7.1)
+    rspec-expectations (2.7.0)
       diff-lcs (~> 1.1.2)
-    rspec-mocks (2.6.0)
+    rspec-mocks (2.7.0)
     ruby-hmac (0.4.0)
-    sass (3.1.7)
-    sinatra (1.2.6)
+    sass (3.1.10)
+    sinatra (1.2.7)
       rack (~> 1.1)
-      tilt (>= 1.2.2, < 2.0)
+      tilt (< 2.0, >= 1.2.2)
     sinatra-advanced-routes (0.5.1)
       monkey-lib (~> 0.5.0)
       sinatra (~> 1.0)
@@ -117,7 +115,6 @@ GEM
       monkey-lib (~> 0.5.0)
       sinatra (~> 1.0)
       sinatra-sugar (~> 0.5.0)
-    spruz (0.2.13)
     tilt (1.3.3)
     twitter_oauth (0.4.3)
       json (>= 1.1.9)
@@ -128,11 +125,10 @@ GEM
       yard (~> 0.6.0)
 
 PLATFORMS
-  java
   ruby
 
 DEPENDENCIES
-  bcrypt-ruby (~> 3.0)
+  bcrypt-ruby
   big_band!
   chronic_duration
   compass
@@ -140,7 +136,7 @@ DEPENDENCIES
   haml
   jruby-openssl
   json_pure
-  maglev-webtools
+  maglev-webtools!
   mime-types
   monkey-lib!
   net-ssh (~> 2.2)
@@ -148,6 +144,6 @@ DEPENDENCIES
   rack-contrib
   rspec
   ruby-hmac
-  sinatra
+  sinatra (~> 1.2.0)
   twitter_oauth
   yard
